@@ -9,10 +9,10 @@ def main():
 
 
     if command == "markdown":
-        try:
+        if inputPath.split(".")[-1] != "md" and inputPath.split(".")[-1] != "markdown" and outputPath.split(".")[-1] != "html" and len(sys.argv) != 4:
             with open(inputPath, "r") as file:
                 text = file.read()
-        except FileExistsError:
+        else:
             print("Invalid file type")
         html = markdown.markdown(text,extensions=["toc", "codehilite", "sane_lists", "extra"])
         with open(outputPath, "w") as f:
