@@ -9,7 +9,7 @@ def main():
 
 
     if command == "markdown":
-        if inputPath.split(".")[-1] != "md" and inputPath.split(".")[-1] != "markdown" and outputPath.split(".")[-1] != "html" and len(sys.argv) != 4:
+        if(inputPath.endswith(".md")) and (outputPath.endswith(".html")) and len(sys.argv) == 4:
             with open(inputPath, "r") as file:
                 text = file.read()
         else:
@@ -21,5 +21,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
     
