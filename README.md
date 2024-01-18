@@ -126,7 +126,7 @@ git clone https://github.com/Kanatanagano/Markdown-to-HTML-converter.git
 cd yourdir
 ```
 
-## 🚀使用方法
+## 使用方法
 1. Markdownファイル(.md)を用意する
 2. スクリプトを実行する
 3. 生成されたファイル(.html)を確認する
