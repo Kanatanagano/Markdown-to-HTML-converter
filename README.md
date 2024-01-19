@@ -1,20 +1,20 @@
 # Markdown-to-HTML-converter
 
-## デモ
-<img width="700" alt="markdown" src="https://github.com/Kanatanagano/Markdown-to-HTML-converter/assets/112442087/1e7e094f-fdd6-4775-b61d-8006d96a99a3">
-
-
 ## 概要
 
 このプログラムは、任意のMarkdownファイルをHTMLファイルに変換するものです。通常、ウェブサーバーにはUbuntuなどのLinuxディストリビューション
-が使われることが多いため、このプログラムはLinuxディストリビューション上で動かすことを想定しています。これにより、このようなREADMEのような
-Markdownファイルを書くだけで、簡単にHTMLファイルを生成して提供することができます。
+が使われることが多いため、このプログラムはLinuxディストリビューション上で動かすことを想定しています。これにより、READMEのようなMarkdown
+ファイルを書くだけで、簡単にHTMLファイルを生成して提供することができます。
 
 Markdownファイルを読み取るために、'r'モードのファイル権限を使用してファイルディスクリプタを作成し、その内容を別のライブラリであるpython-markdown
 に渡してHTMLの内容を取得しました。HTMLの内容を取得した後、この内容を書き込んだ新しいファイルを作成するためにさらにシステムコールを行い、これはCLI
 引数で指定された出力ファイルに書き込まれます。
 
 私はこれをUbuntu上のVirtualBoxを使用して開発し、UbuntuのAPTパッケージマネージャを使用してVSCode、Python、およびpipをインストールしました。
+
+## デモ
+<img width="700" alt="markdown" src="https://github.com/Kanatanagano/Markdown-to-HTML-converter/assets/112442087/1e7e094f-fdd6-4775-b61d-8006d96a99a3">
+
 
 
 ## 使い方
@@ -26,15 +26,11 @@ python3 main.py markdown inputfile outputfile をコマンドを実行するこ�
 ### クローン
 このスクリプトをあなたのPCで実行するために、クローンします。
 
-クローンとは、このスクリプトの実行に必要なファイル(リポジトリのコンテンツ)をあなたのPCのローカル環境へコピーすることです。
-
 下記手順でクローンしてください。
-
 1. リポジトリをクローンする
 ```
 git clone https://github.com/Kanatanagano/Markdown-to-HTML-converter.git
 ```
-
 2. クローンしたリポジトリへ移動する
 ```
 cd yourdir
